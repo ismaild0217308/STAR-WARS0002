@@ -7,12 +7,13 @@ public class STARWARS0002 {
 	Scanner input = new Scanner(System.in);
 		System.out.println("INPUT");
 		System.out.print("panjang : ");
-		double p = input.nextDouble();
+		int panjang = input.nextInt();
 		System.out.print("lebar : ");
-		double l = input.nextDouble();
+		int lebar = input.nextInt();
+	
 
-		int luas = (int)p * (int)l;
-		int keliling = (int) (p + p + l + l);
+		int luas = ( panjang * lebar );
+		int keliling = (2 * panjang + 2 * lebar);
 		
 		System.out.println("OUTPUT");
 		System.out.println("luas : " + luas);
